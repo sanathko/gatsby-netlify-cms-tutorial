@@ -3,7 +3,6 @@ backend:
   repo: sanathko/gatsby-netlify-cms-tutorial
 
 media_folder: static/assets
-public_folder: assets
 
 collections:
   - name: blog
