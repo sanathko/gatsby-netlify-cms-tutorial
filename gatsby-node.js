@@ -1,9 +1,9 @@
-const path = require("path");
+const path = require('path');
 
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
 
-  const blogPostTemplate = path.resolve("src/templates/blogTemplate.js");
+  const blogPostTemplate = path.resolve('src/templates/blogTemplate.js');
 
   return graphql(`
     {
@@ -34,7 +34,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       createPage({
         path: node.frontmatter.path,
         component: blogPostTemplate,
-        context: {}
+        context: {},
       });
     });
   });
